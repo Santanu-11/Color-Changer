@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bg-Color-Changer</title>
+    <link rel="stylesheet" href="bg-color.css">
+</head>
+<body>
+    <!--Rename as bg-color-->
+    <h1>Background Color Changer</h1>
+
+    <div id="colorPanel">
+        <!-- Predefined Color Buttons -->
+        <button class="color-button" style="background-color: red;" onclick="changeBackgroundColor('red')"></button>
+        <button class="color-button" style="background-color: green;" onclick="changeBackgroundColor('green')"></button>
+        <button class="color-button" style="background-color: blue;" onclick="changeBackgroundColor('blue')"></button>
+    </div>
+
+    <div id="addColorContainer">
+        <input type="text" id="colorInput" placeholder="Enter custom color (e.g., #ff5733)">
+        <button id="addColorBtn" onclick="addCustomColor()">Add Color</button>
+    </div>
+
+    <script src="bg-color.js"></script>
+
+</body>
+</html>
+
